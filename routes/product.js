@@ -2,16 +2,16 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.send("Fetching all users");
+  res.send("Fetching all products");
 });
 
 router.get("/:id", (req, res) => {
   const id = req.params.id * 1;
-  res.send(`Fetching user with ID: ${id}`);
+  res.send(`Fetching product with ID: ${id}`);
 });
 
 router.post("/", (req, res) => {
-  res.send("Adding a new user");
+  res.send("Adding a new product");
 });
 
 module.exports = router;

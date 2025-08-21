@@ -1,8 +1,12 @@
 const express = require("express");
 const app = express();
-const bookRouter = require("./routes/book");
+const userRouter = require("./routes/user");
+const productRouter = require("./routes/product");
+const cartRouter = require("./routes/cart");
 
-app.use("/books", bookRouter);
+app.use("/user", userRouter);
+app.use("/product", productRouter);
+app.use("/cart", cartRouter);
 
 app.listen(4000, () => {
   console.log("Server is running on http://localhost:4000");
