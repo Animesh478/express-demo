@@ -4,8 +4,8 @@ const userRouter = require("./routes/user");
 const productRouter = require("./routes/product");
 const cartRouter = require("./routes/cart");
 
-app.use("/user", userRouter);
-app.use("/product", productRouter);
+app.use("/users", userRouter);
+app.use("/products", productRouter);
 app.use("/cart", cartRouter);
 
 app.listen(4000, () => {
